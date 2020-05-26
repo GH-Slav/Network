@@ -12,5 +12,6 @@ interface CoinAPI {
         @Query("limit")
         limit: Int,
         @Query("convert")
-        currencyCode: String): Deferred<Response<Coins>>
+        currencyCode: String)
+            : Deferred<Response<Coins>>
 }
